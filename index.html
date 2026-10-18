@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Las Papitas</title>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <a class="brand script" href="#top"><img class="dot" src="logo.png" alt="Las Papitas">Las Papitas</a>
+  <button class="cart-btn" id="open">🛒 Carrito <span id="count">0</span></button>
+</header>
+
+<section class="hero" id="top">
+  <img class="badge" src="logo.png" alt="Logo de Las Papitas">
+  <h1 class="script">Las Papitas</h1>
+  <p>Todo lo rico que se puede hacer con papa, preparado con cariño y a pedido.</p>
+  <a class="cta" href="#catalogo">Ver catálogo</a>
+</section>
+
+<main id="catalogo">
+  <h2 class="script">Nuestro catálogo</h2>
+  <p class="sub">Elegí tus favoritos y mandá el pedido por Instagram</p>
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer>
+  <p class="script" style="font-size:1.4rem;color:var(--ink)">Las Papitas 🥔</p>
+  <p>Pedidos por Instagram: <a id="iglink" href="#" target="_blank" rel="noopener">@laspapitas</a></p>
+</footer>
+
+<div class="overlay" id="ov"></div>
+<aside id="drawer" aria-label="Carrito">
+  <header><h2 class="script">Tu pedido</h2><button class="x" id="close" aria-label="Cerrar">×</button></header>
+  <div id="items"></div>
+  <div class="total"><span>Total</span><span id="total">$0</span></div>
+  <input id="name" placeholder="Tu nombre">
+  <textarea id="notes" rows="2" placeholder="Aclaraciones (retiro, horario, etc.)"></textarea>
+  <button class="send" id="send" disabled>Enviar pedido por Instagram</button>
+  <p class="note">Se copia tu pedido y se abre nuestro chat de Instagram: solo pegalo y enviá.</p>
+</aside>
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
